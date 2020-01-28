@@ -1,0 +1,256 @@
+/*Hej min side fungerer i chrome til en 13 tommer skærm*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato&subset);
+body{background-color: #f2f1e4;
+}
+
+/* Top menu */
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #D7D6B6;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: larger;
+    font-family: 'lato';
+    font-weight: bold;
+    margin: -8px;
+    list-style-type: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Skærm 800px eller over*/
+@media only screen and (min-width:800px){
+    .menu{
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 78px;
+    }
+}
+
+/* Logo */
+.menu img{
+    width: auto;
+    height: 90px;
+}
+
+/*links*/
+a:link, a:visited {
+    color: #3A392F;
+    padding: 18.5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+  }
+/* baggrundsfarve, hvilken side er aktiv */
+a:hover, a:active{
+    background-color: #3A392F;
+    color: white;
+    border-radius: 0px 0px 25px 25px;
+  }
+a.logo:hover, a.logo:active {
+      background-color: transparent;
+  }
+a.forside{
+      background-color: #00917b;
+      color: white;
+      border-radius: 0px 0px 25px 25px;
+  }
+a.projekter{
+    background-color: #00917b;
+    color: white;
+    border-radius: 0px 0px 25px 25px;
+}
+a.ommig{
+    background-color: #00917b;
+    color: white;
+    border-radius: 0px 0px 25px 25px;
+}
+a.kontakt{
+    background-color: #00917b;
+    color: white;
+    border-radius: 0px 0px 25px 25px;
+}
+
+/* skrift */
+.overskrift{
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    margin: 30px -8px;
+    color: #3A392F;
+    font-family: 'lato';
+    justify-content: center;
+}
+
+.overskrift2{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    margin: 30px -8px 30px 0px;
+    color: #3A392F;
+    font-family: 'lato';
+    justify-content: left;
+    padding: 10px 0px 0px 0px;
+}
+
+.broedtext{
+    font-family: 'lato';
+    font-size: 13pt;
+    color: #3a392f;
+    display: flex;
+    justify-content: center;
+}
+
+.broedtextk{
+    font-family: 'lato';
+    font-size: 13pt;
+    color: #3A392F;
+    margin: 30px 0px 0px 0px;
+}
+
+.imgkasper{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35.5%;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*flexbox til projekter*/
+.flexprojekt{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 5% auto 0px auto;
+    justify-content: center;
+  }
+.flexprojekt > figure {
+    background-color: white;
+    border-radius: 25px;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+}
+.flexprojekt > figure:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.1);
+}
+
+.billedep {
+    text-align: center;
+    background-color: white;
+    border-radius: 0px 0px 25px 25px;
+    color: #3A392F;
+    font-family: 'lato';
+    font-size: 18px;
+}
+
+.imgflex{
+    width: 250px;
+    height: auto;
+    border-radius: 25px 25px 0px 0px;
+}
+
+a.boxlink{
+    padding: 0px;
+    text-decoration: none;
+    display: inline-block;
+}
+a.boxlink:hover, a.boxlink:active {
+    background-color: transparent;
+}
+a.footerlink{
+    padding: 0px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+.footerimg{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.asidek{
+    width: 40%;
+    margin: 30px 0px 0px 50px;
+    float: left;
+}
+
+.main{
+    background-color: white;
+    width: auto;
+    margin: 0px -8px 0px 42%;
+    border-radius: 25px 0px 0px 20px;
+    padding: 0px 0px 20px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Flex til hca siden */
+.flexhca{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 5% auto 0px auto;
+    justify-content: center;
+    align-items: baseline;
+}
+
+  .flexhca > figure {
+    background-color: white;
+    border-radius: 25px;
+    width: 500px;
+    height: 100%;
+    margin: 10px;
+}
+
+.imghca{
+    width: 500px;
+    height: auto;
+    border-radius: 25px 25px 0px 0px;
+}
+
+a.tilbage{
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    margin: 10px 0px 0px 195px;
+    display: flex;
+    justify-content: left;
+}
+
+.footerimghca{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.overskrifthca{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    margin: -120px 0px 0px 0px;
+    color: #3A392F;
+    font-family: 'lato';
+    justify-content: center;
+}
